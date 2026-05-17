@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+:root {
+  --deep-black: #0B0B0F;
+  --graphite: #16161D;
+  --space-gray: #23232D;
+  --electric-blue: #4F8CFF;
+  --neon-cyan: #6CE5FF;
+  --premium-violet: #7B61FF;
+  --white-smoke: #F5F7FA;
+  --silver: #9CA3AF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--deep-black);
+  color: var(--white-smoke);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--deep-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--space-gray);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--electric-blue);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(22, 22, 29, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-strong {
+  background: rgba(22, 22, 29, 0.85);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Glow effects */
+.glow-blue {
+  box-shadow: 0 0 30px rgba(79, 140, 255, 0.15), 0 0 60px rgba(79, 140, 255, 0.05);
+}
+
+.glow-violet {
+  box-shadow: 0 0 30px rgba(123, 97, 255, 0.15), 0 0 60px rgba(123, 97, 255, 0.05);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 30px rgba(108, 229, 255, 0.15), 0 0 60px rgba(108, 229, 255, 0.05);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #F5F7FA 0%, #4F8CFF 50%, #6CE5FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-violet {
+  background: linear-gradient(135deg, #4F8CFF 0%, #7B61FF 50%, #6CE5FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Ambient background effects */
+.ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 6s ease-in-out 2s infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* Section styling */
+section {
+  position: relative;
+}
+
+/* Particle effect base */
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(79, 140, 255, 0.4);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Timeline connector */
+.timeline-connector {
+  width: 2px;
+  background: linear-gradient(to bottom, var(--electric-blue), transparent);
+}
+
+/* Check animation */
+@keyframes check-appear {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.check-animate {
+  animation: check-appear 0.5s ease-out forwards;
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--electric-blue), var(--premium-violet));
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--premium-violet), var(--electric-blue));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(79, 140, 255, 0.3);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(79, 140, 255, 0.3);
+  background: rgba(79, 140, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  border-color: rgba(79, 140, 255, 0.6);
+  background: rgba(79, 140, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Grid pattern background */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(79, 140, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 140, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
