@@ -272,6 +272,12 @@ export default function Hero() {
               </svg>
               Watch Demo
             </button>
+            <a href="/explore" className="btn-secondary px-8 py-3.5 rounded-full font-medium text-sm flex items-center gap-2 border-[#7B61FF]/30 hover:border-[#7B61FF]/60">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7B61FF" strokeWidth="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+              </svg>
+              <span className="text-[#7B61FF]">Try 3D Explorer</span>
+            </a>
           </motion.div>
         </div>
 
