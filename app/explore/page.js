@@ -1,7 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 
-const Explorer = dynamic(() => import("./components/Explorer"), {
+const Explorer = dynamic(() => import("./explorer/Explorer"), {
   ssr: false,
   loading: () => (
     <div className="w-full h-screen bg-[#0B0B0F] flex flex-col items-center justify-center gap-4">

@@ -3,9 +3,9 @@ import { useRef, useState, useEffect, useCallback, Suspense } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls, Grid, Environment, Splat } from "@react-three/drei";
 import * as THREE from "three";
-import JoystickControl from "./JoystickControl";
-import HUD from "./HUD";
-import UploadZone from "./UploadZone";
+import JoystickControl from "../joystick/JoystickControl";
+import HUD from "../hud/HUD";
+import UploadZone from "../upload/UploadZone";
 
 // ─────────────────────────────────────────
 // Procedural Character (box-body robot)

@@ -1,15 +1,15 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Problem from "./components/Problem";
-import Solution from "./components/Solution";
-import Comparison from "./components/Comparison";
-import HowItWorks from "./components/HowItWorks";
-import Story from "./components/Story";
-import Hyderabad from "./components/Hyderabad";
-import Verticals from "./components/Verticals";
-import Technology from "./components/Technology";
-import Waitlist from "./components/Waitlist";
-import Footer from "./components/Footer";
+import Navbar      from "./shared/navbar/Navbar";
+import Footer      from "./shared/footer/Footer";
+import Hero        from "./sections/hero/Hero";
+import Problem     from "./sections/problem/Problem";
+import Solution    from "./sections/solution/Solution";
+import Comparison  from "./sections/comparison/Comparison";
+import HowItWorks  from "./sections/how-it-works/HowItWorks";
+import Story       from "./sections/story/Story";
+import Hyderabad   from "./sections/hyderabad/Hyderabad";
+import Verticals   from "./sections/verticals/Verticals";
+import Technology  from "./sections/technology/Technology";
+import Waitlist    from "./sections/waitlist/Waitlist";
 
 export default function Home() {
   return (
