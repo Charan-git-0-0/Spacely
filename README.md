@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Spacely
 
-## Getting Started
+### Experience spaces before you step into them.
 
-First, run the development server:
+Spacely is an early-stage immersive spatial discovery platform focused on transforming how people explore rental properties and physical spaces online.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Instead of relying on static photos and rushed site visits, Spacely explores the idea of:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* virtual property walkthroughs
+* commute visualization
+* locality-aware discovery
+* lifestyle-first decision making
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The vision is simple:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> People don’t just rent homes. They rent a lifestyle radius.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Current Status
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This repository currently contains the early UI/UX foundation and landing page.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The current focus is:
 
-## Deploy on Vercel
+* attractive frontend experience
+* immersive website design
+* futuristic spatial interaction concepts
+* storytelling-driven product presentation
+* waitlist and concept validation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This is being developed in phases.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Why This Project Exists
+
+Finding a place to live is still surprisingly inefficient.
+
+Most people make major housing decisions using:
+
+* blurry images
+* incomplete information
+* fragmented locality research
+* stressful physical visits
+
+Spacely explores whether immersive digital experiences can reduce that uncertainty before a real-world visit even happens.
+
+---
+
+## Vision
+
+Spacely is not being imagined as just another listing portal.
+
+The long-term goal:
+
+* immersive rental discovery
+* event and venue exploration
+* commercial space intelligence
+* spatial experiences
+
+---
+
+## Built For
+
+* immersive UX
+* spatial experiences
+* product design
+* startup systems
+* future-facing digital interaction
+
+Currently learning and building in public.
+
+---
+
+## Status
+
+Guassian splatting feature
+Frontend exploration
+--Actively evolving--
+
+---
+
+---
+
+## Tech Stack
+
+Current stack:
+
+* Next.js
+* React
+* Tailwind CSS
+* Framer Motion
+
+Planned exploration:
+
+* Spatial computing workflows
+* 3D visualization systems
+* Modern mapping technologies
+* AI-assisted reconstruction pipelines
+
+---
